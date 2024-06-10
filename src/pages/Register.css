@@ -1,0 +1,90 @@
+.boxx{
+    background: linear-gradient(to top, #3b4257, #4f79d4);
+    box-shadow: 0px 2.9px 3.3px rgba(0, 0, 0, 0.068), 0px 9.1px 9px rgba(0, 0, 0, 0.084), 0px 23px 21.7px rgba(0, 0, 0, 0.0899), 0px 72px 72px rgba(0, 0, 0, 0.16);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+form{
+    position: relative;
+    width: calc(100% - 4em);
+    color: #fff;
+}
+
+.logo-wrapp{
+    color: #1251d0;
+    font-size: 2em;
+    border-radius: 58%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 0.3em;
+}
+
+.welcome-line{
+    line-height: 1;
+    font-size: 1.75em;
+    margin-bottom: 0.3em;
+}
+
+.input-boxx{
+    position: relative;
+    width: 100%;
+    margin: 0.8em;
+}
+
+.input-boxx :last-child{
+    margin-bottom: 0;
+}
+
+.input-boxx input{
+    position: relative;
+    width: 100%;
+    padding: 0.625em 0 0.625em 1.5em;
+    background: transparent;
+    font-size: 1em;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ffff;
+}
+
+.input-boxx i{
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    font-size: 1em;
+}
+
+
+
+.input-boxx span{
+    position: absolute;
+    left: 0;
+    padding: 0.625em 0 0.625em 1.5em;
+    pointer-events: none;
+    opacity: 0.5;
+    transition: 308ms;
+}
+
+.input-boxx input:focus ~ span,
+.input-boxx input:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 0.9em;
+    background: #ffff;
+    color: #212225;
+    opacity: 1;
+    padding: 2px 4px;
+}
+
+.input-boxx input[type="submit"] {
+    background: #ffff;
+    color: #111113;
+    border: 2px solid #ffff;
+    font-weight: 600;
+    padding: 0.625em;
+    cursor: pointer;
+}
+
+.input-boxx input[type="submit"]:hover{
+    background: transparent;
+    color: #ffff;
+}

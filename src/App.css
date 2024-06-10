@@ -1,0 +1,19 @@
+
+@media (max-width: 640px) {
+
+    .searchbox{
+        display: none;
+    }
+         
+}
+
+body{
+    @apply bg-slate-100
+}
+
+.scrollbar-none::-webkit-scrollbar{
+    display: none;
+}
+
+
+ 
