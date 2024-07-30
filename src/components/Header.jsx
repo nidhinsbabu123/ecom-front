@@ -27,9 +27,6 @@ function Header() {
 
     const [search, setSearch] = useState(searchQuery)
 
-    // console.log("Search Input", searchInput?.search.split("=")[1])
-
-    // console.log("User header ", user);
 
     const handleLogout = async () => {
         const fetchData = await fetch(SummaryApi.logout_user.url, {
